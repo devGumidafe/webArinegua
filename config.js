@@ -1,8 +1,8 @@
 export const seo = {
   title: "Arinegua Garcia",
   description:
-    "A Next.js boilerplate for building your portfolio as quick as possible",
-  canonical: "https://portfolio-boilerplate-nextjs.vercel.app/",
+    "Portfolio de Arinegua Garcia.",
+  canonical: "https://www.arineguagarcia.com/",
 };
 
 export const data = [

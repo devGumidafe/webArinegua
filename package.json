@@ -1,10 +1,10 @@
 {
-  "name": "portfolio-boilerplate-nextjs",
-  "version": "0.1.0",
+  "name": "arineguagarcia.com",
+  "version": "1.0",
   "private": true,
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/imadatyatalah/portfolio-boilerplate-nextjs"
+    "url": "https://www.arineguagarcia.com"
   },
   "scripts": {
     "dev": "next dev",
