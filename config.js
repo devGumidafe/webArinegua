@@ -1,7 +1,7 @@
 export const seo = {
   title: "Arinegua Garcia",
   description:
-    "Portfolio de Arinegua Garcia.",
+    "Portfolio de Arinegua Garcia",
   canonical: "https://www.arineguagarcia.com/",
 };
 
