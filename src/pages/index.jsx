@@ -9,6 +9,7 @@ import { NextSeo } from 'next-seo';
 import NextImage from 'next/image';
 
 import { seo, data } from 'config';
+import Slider from '@/components/slider';
 
 const Home = () => {
   const color = useColorModeValue('telegram.500', 'telegram.400');
@@ -63,6 +64,17 @@ const Home = () => {
             </span>
           </Heading>
         </Box>
+      </Box>
+
+      <Box
+        as='section'
+        d='flex'
+        alignItems='center'
+        flexDir='column'
+        textAlign='center'
+        py='4'
+      >
+        <Slider></Slider>
       </Box>
 
       <Box
