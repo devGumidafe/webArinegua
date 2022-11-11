@@ -88,30 +88,33 @@ const Home = () => {
         {data.map((item, index) => (
           <Box
             d={{ lg: 'flex' }}
-            justifyContent={{ lg: 'center' }}
-            alignItems={{ lg: 'center' }}
-            flexDir={{ lg: isOdd(index) == 1 && 'row-reverse' }}
+            justifyContent={{ lg: 'flex-start' }}
+            alignItems={{ lg: 'flex-start' }}
             key={index}
+            marginBottom='5'
+            backgroundImage={`url(${item.image})`}
+            backgroundSize='cover'
+            backgroundPosition='right right'
+            backgroundRepeat='no-repeat'
+            borderRadius='lg'
+            boxShadow='lg'
+            w={{ base: '100%', lg: '100%' }}
+            h={{ base: 'auto', lg: '600px' }}
+            id={item.title}
           >
             <Box
-              w={{ base: '80%', lg: '35%' }}
-              mx={{ base: 'auto', lg: '0' }}
-              pl={{ lg: isOdd(index) == 1 && '10' }}
-              pr={{ lg: isOdd(index) == 0 && '10' }}
+              d='flex'
+              flexDir='column'
+              justifyContent='flex-start'
+              alignItems='flex-start'
+              backgroundColor='red'
+              w={{ base: '100%', lg: '50%' }}
+              h={{ base: 'auto', lg: '100%' }}
+              p='5'
             >
-              <NextImage
-                src={item.image}
-                width='500'
-                height='500'
-                alt={item.title}
-                placeholder='blur'
-                blurDataURL='L8LE.{~60000_3V@ITx^00t:V?-P'
-              />
-            </Box>
-
-            <Box w={{ lg: '50%' }}>
               <Heading as='h1'>{item.title}</Heading>
-              <Text py='4'>{item.description}</Text>
+              <Text>{item.author}</Text>
+              
             </Box>
           </Box>
         ))}

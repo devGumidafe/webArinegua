@@ -7,23 +7,15 @@ export const seo = {
 
 export const data = [
   {
-    title: "Your title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
-    image: "/code-review-bro.png",
+    title: "Julia",
+    author: "Arinegua Garcia (2019)",
+    image: "/images/julia_cartel.jpg",
   },
   {
-    title: "Your title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
-    image: "/code-review-bro.png",
-  },
-  {
-    title: "Your title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
-    image: "/code-review-bro.png",
-  },
+    title: "28.691",
+    author: "Arinegua Garcia (2020)",
+    image: "/images/28.691_cartel.jpg",
+  }
 ];
 
 export const MAX_WIDTH = "1440px";

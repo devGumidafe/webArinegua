@@ -36,7 +36,6 @@ class MyDocument extends Document {
           <ColorModeScript
             initialColorMode={colorMode.config.initialColorMode}
           />
-
           <Main />
           <NextScript />
         </body>
