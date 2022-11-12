@@ -19,6 +19,12 @@ const Home = () => {
   const title = 'Home';
   const description = seo.description;
 
+  const onChangeAudio = (e, itemTitle) => {
+    const audio = document.getElementById(`audio-${itemTitle}`);
+    audio.src = `/audios/${itemTitle}/${e.target.outerText}.wav`;
+    audio.play();
+  };
+
   return (
     <>
       <NextSeo
@@ -41,7 +47,7 @@ const Home = () => {
 
       <Box
         as='section'
-        d='flex'
+        display='flex'
         alignItems='center'
         flexDir='column'
         textAlign='center'
@@ -68,7 +74,7 @@ const Home = () => {
 
       <Box
         as='section'
-        d='flex'
+        display='flex'
         alignItems='center'
         flexDir='column'
         textAlign='center'
@@ -79,7 +85,7 @@ const Home = () => {
 
       <Box
         as='section'
-        d='flex'
+        display='flex'
         alignItems='center'
         flexDir='column'
         textAlign={{ base: 'center', lg: 'left' }}
@@ -87,7 +93,7 @@ const Home = () => {
       >
         {data.map((item, index) => (
           <Box
-            d={{ lg: 'flex' }}
+            display={{ lg: 'flex' }}
             justifyContent={{ lg: 'flex-start' }}
             alignItems={{ lg: 'flex-start' }}
             key={index}
@@ -103,7 +109,7 @@ const Home = () => {
             id={item.title}
           >
             <Box
-              d='flex'
+              display='flex'
               flexDir='column'
               justifyContent='flex-start'
               alignItems='flex-start'
@@ -114,7 +120,23 @@ const Home = () => {
             >
               <Heading as='h1'>{item.title}</Heading>
               <Text>{item.author}</Text>
-              
+              <Box
+                display='flex'
+                flexDir='column'
+                justifyContent='flex-start'
+                alignItems='flex-start'
+                w='100%'
+                h='100%'
+                p='5'
+              >
+                <ul>
+                  {item.audios.map((audio, index) => (
+                  <li onClick={(e) => onChangeAudio(e,item.title)} key={index}>{audio}</li>
+                  ))}
+                </ul>
+              </Box>
+
+              <audio src='' preload='none' controls id={`audio-${item.title}`}></audio>
             </Box>
           </Box>
         ))}
