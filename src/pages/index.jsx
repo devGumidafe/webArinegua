@@ -21,7 +21,7 @@ const Home = () => {
 
   const onChangeAudio = (e, itemTitle) => {
     const audio = document.getElementById(`audio-${itemTitle}`);
-    audio.src = `/audios/${itemTitle}/${e.target.outerText}.wav`;
+    audio.src = `/audios/${itemTitle}/${e.target.outerText}.mp3`;
     audio.play();
   };
 
@@ -114,6 +114,7 @@ const Home = () => {
               justifyContent='flex-start'
               alignItems='flex-start'
               backgroundColor='whiteAlpha.500'
+              color='black'
               borderRadius='lg'
               w={{ base: '100%', lg: '100%' }}
               h={{ base: 'auto', lg: '100%' }}

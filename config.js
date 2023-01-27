@@ -40,7 +40,7 @@ export const data = [
     image: "/images/entrepalabras_cartel.jpg",
     audios: [
     "1. La escuela",
-    "2. El poder del cuarderno",
+    "2. El poder del cuaderno",
     "3. Tormento",
     "4. Angustia del recuerdo",
     "5. Frustración",
