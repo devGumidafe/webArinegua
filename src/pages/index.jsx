@@ -100,12 +100,12 @@ const Home = () => {
             marginBottom='5'
             backgroundImage={`url(${item.image})`}
             backgroundSize='cover'
-            backgroundPosition='right right'
+            backgroundPosition='top right'
             backgroundRepeat='no-repeat'
-            borderRadius='lg'
             boxShadow='lg'
+            borderRadius='lg'
             w={{ base: '100%', lg: '100%' }}
-            h={{ base: 'auto', lg: '600px' }}
+            h={{ base: 'auto', lg: '500px' }}
             id={item.title}
           >
             <Box
@@ -113,8 +113,9 @@ const Home = () => {
               flexDir='column'
               justifyContent='flex-start'
               alignItems='flex-start'
-              backgroundColor='red'
-              w={{ base: '100%', lg: '50%' }}
+              backgroundColor='whiteAlpha.500'
+              borderRadius='lg'
+              w={{ base: '100%', lg: '100%' }}
               h={{ base: 'auto', lg: '100%' }}
               p='5'
             >
@@ -131,12 +132,23 @@ const Home = () => {
               >
                 <ul>
                   {item.audios.map((audio, index) => (
-                  <li onClick={(e) => onChangeAudio(e,item.title)} key={index}>{audio}</li>
+                    <li
+                      onClick={(e) => onChangeAudio(e, item.title)}
+                      key={index}
+                      className='li-audio'
+                    >
+                      {audio}
+                    </li>
                   ))}
                 </ul>
               </Box>
 
-              <audio src='' preload='none' controls id={`audio-${item.title}`}></audio>
+              <audio
+                src=''
+                preload='none'
+                controls
+                id={`audio-${item.title}`}
+              ></audio>
             </Box>
           </Box>
         ))}

@@ -25,7 +25,29 @@ export const data = [
     "3. Amenazas",
     "4. Nada es tan fácil",
     ]
-  }
+  },
+  {
+    title: "Spot",
+    author: "Arinegua Garcia (2020)",
+    image: "/images/tenis_cartel.jpg",
+    audios: [
+    "1. Mix tenis",
+    ]
+  },
+  {
+    title: "Entrepalabras",
+    author: "Arinegua Garcia (2021)",
+    image: "/images/entrepalabras_cartel.jpg",
+    audios: [
+    "1. La escuela",
+    "2. El poder del cuarderno",
+    "3. Tormento",
+    "4. Angustia del recuerdo",
+    "5. Frustración",
+    "6. Superación",
+    ]
+  },
+
 ];
 
 export const MAX_WIDTH = "1440px";
