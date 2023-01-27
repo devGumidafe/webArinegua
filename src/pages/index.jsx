@@ -149,7 +149,9 @@ const Home = () => {
                 preload='none'
                 controls
                 id={`audio-${item.title}`}
-              ></audio>
+              >
+              </audio>
+              
             </Box>
           </Box>
         ))}
