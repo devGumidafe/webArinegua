@@ -13,9 +13,6 @@ import Slider from '@/components/slider';
 
 const Home = () => {
   const color = useColorModeValue('telegram.500', 'telegram.400');
-
-  const isOdd = (num) => num % 2;
-
   const title = 'Home';
   const description = seo.description;
 
@@ -151,7 +148,7 @@ const Home = () => {
                 id={`audio-${item.title}`}
               >
               </audio>
-              
+
             </Box>
           </Box>
         ))}
